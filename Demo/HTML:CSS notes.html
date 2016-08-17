@@ -1,0 +1,130 @@
+<!--
+	Date:06.09/2016
+	Editor: Carlos Kan
+	Email: hanhao517@gmail.com
+	
+	This is a notebook about the most used and most fundamental rules and tags in HTML/CSS.
+	Whenever you feel like you're gonna forget something, just return to this notebook, and search for whatever that is borthering you at that moment.
+-->
+
+<!--
+	This part below is the begining elements in every HTML EVER.
+	Seriously, you cannot start writing without these.
+	Let's GOOOOOOOOOOOOOOOO!
+--> 
+
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]> <!--><html lang="en"> <!--<![endif]-->
+
+<!--[if lt IE 8]>
+<div id="outdated-browser-banner" style="display:none">
+<p>Your IE browser is out-dated. Please upgrade to the newest version.
+</p>
+    <ul>
+    <li><a href="http://windows.microsoft.com/ie"><img src="/images/icon_ie.png" width="48" height="48">Internet Explorer</a>
+    </li>
+    <li><a href="http://www.google.com/chrome"><img src="/images/icon_chrome.png" width="48" height="48">Google Chrome</a>
+    </li>
+    <li><a href="http://getfirefox.com/"><img src="/images/icon_firefox.png" width="48" height="48">Firefox</a>
+    </li>
+    </ul>
+<![endif]-->
+
+<head>
+	<!-- Basic Page Needs -->
+	<meta charset="utf-8">
+	<title>Write your title here</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no"> <!--Only if you don't want the numbers on your site to be automatically dialed-->
+	
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> <!--When you specify the device-width size, initial-scale will be 1-->
+	<meta name="author" content="Your_Name">
+	<meta name="keywords" content="keyword1,keyword2,keyword3" /> <!--Keyword is not necessary, but it's nice to have I guess, according to many programmers' blog-->
+    <meta name="description" content="Your_Description">
+    <meta name="copyright" content="© Your_Company Co., Ltd.">
+
+    <!-- Main Style 
+	    You can use href="style.css" if the CSS file is within the same folder with index.html
+	    Also, you can create a new different folder under the parent html folder, say "css", then you will write href="css/style.css"
+    --> 
+	<link rel="stylesheet" media="screen" href="style.css">
+	<link rel="stylesheet" media="screen" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Use Google Fonts API
+	    Here is the guide: https://developers.google.com/fonts/docs/getting_started#a_quick_example
+	    Here is the list: https://www.google.com/fonts
+    -->
+    <link href='http://fonts.googleapis.com/css?family=Font+Name' rel='stylesheet' type='text/css'>
+    
+    <!-- ////////////////////// SNS Sharing Meta /////////////////////// -->
+    <meta property="twitter:site" content="@Your_Twitter_Account_ID">
+    <meta property="og:site_name" content="Your_Site_Name">
+        <meta property="twitter:site" content="@Your_Twitter_Account_ID"></meta>
+    <meta property="twitter:card" content="summary">
+    <meta property="fb:app_id" content="Your_Facebook_Account">
+    <meta property="og:title" content="Welcome to Your_Site_Name">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="Your_Site">
+    <meta property="og:image" content="Your_Site_Logo">
+    <meta property="og:description" content="Your_Description">
+    
+    <!-- ////////////////////// Multi-languages Page /////////////////////// -->
+    <link rel="canonical" href="https://yoursite/en/"> <!--canonical means this one is the most preferred page-->
+    <link rel="alternate" hreflang="x-default" href="https://yoursite.net/"> <!--x-default, well, defaulf, duh~-->
+    <link rel="alternate" hreflang="en" href="https://yoursite.net/en/">
+    <link rel="alternate" hreflang="ja" href="https://yoursite.net/ja/">
+    <link rel="alternate" hreflang="de" href="https://yoursite.net/de/">
+    <link rel="alternate" hreflang="fr" href="https://yoursite.net/fr/">
+    <link rel="alternate" hreflang="it" href="https://yoursite.net/it/">
+    <link rel="alternate" hreflang="ru" href="https://yoursite.net/ru/">
+    <link rel="alternate" hreflang="es" href="https://yoursite.net/es/">
+    <link rel="alternate" hreflang="ko" href="https://yoursite.net/ko/">
+    <link rel="alternate" hreflang="zh-hans" href="https://yoursite.net/zh-hans/">
+    <link rel="alternate" hreflang="zh-hant" href="https://yoursite.net/zh-hant/">
+    
+    <!-- Your Site Favicon -->
+    <link href="/img folder/fav.png" rel="icon" type="image/png">
+    <link href="/img folder/fav.png" rel="shortcut icon" type="image/png">
+    
+    <!-- Your Mobile Version of Your Site -->
+    <link rel="alternate" media="handheld" href="http://Your_site_handheld/"> <!--if you have a separate domain-->
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="http://Your_site_smartphone/"> <!--if you have a separate domain. 640px is the break-point. Higher than it will automatically switch to screen mode-->
+    
+</he../Downloads/bootstrap-material-design-master/index.htmlad>
+
+<body>
+	<div id="all" class="animsition">
+		<!-- ////////////////////// TOP HEADER /////////////////////// -->
+		<header id="top-header" >
+                <div class="container">
+                    <div class="logo">
+                        <h2><a href="index.html">Your Name</a></h2> <!--This is ususally the Top Homepage-->
+                    </div> <!--End logo-->
+                    <nav id="main-nav">
+	                    <ul class="siteheaderglobalnavi">
+                            <li><a href='index.html'>Home</a></li>
+                            <li><a href='page1.html'>Page1</a></li>
+                            <li><a href='page2.html'>Page2</a></li>
+                            <li><a href='page3.html'>Page3</a></li>
+                            <li><a href='page4.html'>page4</a></li>
+                            <li><a href='page5.html'>page5</a></li>
+	                    </ul>
+	                    
+	                    <ul class="siteheadermenulist">
+		                    <li><a href='menu1.html'>Menu1</a></li>
+                            <li><a href='menu2.html'>Menu2</a></li>
+                            <li><a href='menu3.html'>Menu3</a></li>
+                    </nav>
+		
+	</div>	
+</body>
+
+    
+    
+    
+    
