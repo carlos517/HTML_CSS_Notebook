@@ -6,14 +6,14 @@
 	<link rel="Shortcut Icon" type="image/ico" href="imgs/favicon.ico" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
   
-	<title>Carlos' Market</title>
+	<title>Airy Photography Theme</title>
   
 	<!-- CSS _____________________________________________-->
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="css/icomoon.css" media="screen" />
 	<link rel="stylesheet" href="css/magnificpopup.css" media="screen" />
-	<link rel="stylesheet" href="style.css" media="screen" />  
+	<link rel="stylesheet" href="css/style.css" media="screen" />  
 
 	<!-- Fixing Internet Explorer ______________________________________-->
 	<!--[if lt IE 9]>
@@ -59,10 +59,11 @@
 							<ul class="sub-menu">
 								<li><a href="index.html">Fullscreen Image</a></li>
 								<li><a href="gallery-fullscreen.html">Fullscreen Gallery</a></li>
+								<li><a href="gallery-fullscreen-kenburns.html">Fullscreen KenBurns</a></li>
 								<li><a href="gallery-fullscreen-video.html">Fullscreen Video</a></li>
 							</ul>
 						</li>
-						<li class="current_page_parent menu-item-has-children"><a href="#">Portofolio</a>
+						<li class="current_page_parent menu-item-has-children"><a href="#">Galleries</a>
 							<ul class="sub-menu">
 								<li><a href="gallery-masonry.html">Masonry Grid Gallery</a></li>
 								<li><a href="gallery-horizontal.html">Horizontal Gallery</a></li>
@@ -77,7 +78,7 @@
 						<li class="menu-item-has-children"><a href="#">Pages</a>
 							<ul class="sub-menu">
 								<li><a href="about.html">About</a></li>
-								<li><a href="pricing.html">Business</a></li>
+								<li><a href="pricing.html">Pricing</a></li>
 								<li><a href="elements.html">Typography & Elements</a></li>
 								<li><a href="404.html">404 Page</a></li>
 							</ul>
@@ -101,35 +102,17 @@
 			<!-- WYSIWYG -->
 
 			<div class="position-absolute">
-					<h2 class="big no-margin"><strong>CARLOS' BLOG</strong></h2>
-					<h2>Thoughts & Experiences (Mostly Interesting) in Japan</h2><br />
+				<h2 class="big no-margin"><strong>AIRY PHOTO</strong></h2>
+				<h2>Landscape & Portrait Photographer</h2><br />
 			</div>
 			
-
 			<div class="gallery fullscreen-gallery">
-				
 				<figure class="gallery-item">
 					<header class='gallery-icon'>
-						<div class="gallery-video" style="background-image: url('imgs/video/fallback-video.jpg');">
-							<div id="video-wrap" class="video-wrap">
-								  <video preload="metadata" autoplay loop id="my-video">
-									 <source src="imgs/video/movie.mp4" type="video/mp4">
-									 <source src="imgs/video/movie.ogv" type="video/ogg">
-								  </video>
-						  	 </div>
-						</div>
 					</header>	
 					<figcaption class='gallery-caption'>
 						<div class="entry-summary">
-							<div class="blog-oneline-carousel">
-								<h3>Latest</h3>
-								<div class="viewport">
-									<ul class="overview">
-										<li><p>02/17 &nbsp; 津山さんから課題をもらいました... <a href="#">Read more</a></p></li>
-										<li><p>02/19 &nbsp; Today is extremely hot and dry... <a href="#">Read more</a></p></li>
-									</ul>
-								</div>
-							</div>
+							<p>Underwater VIMEO video</p>
 						</div>
 					</figcaption>
 				</figure>
@@ -156,8 +139,8 @@
 <script src="js/jquery.magnific-popup.min.js"></script> 
 <!-- include mousewheel plugin -->
 <script src="js/jquery.mousewheel.min.js"></script>
-<!-- include video plugin -->
-<script src="js/backgroundVideo.min.js"></script>
+<!-- include OK video plugin -->
+<script src="js/okvideo.min.js"></script>
 <!-- include gallery cycle plugin -->
 <script src="js/jquery.cycle.min.js"></script>
 <!-- include carousel plugins -->
@@ -167,10 +150,8 @@
 <!-- include custom script -->
 <script src="js/scripts.js"></script>
 <script>
-	$(document).ready(function() {
-        $('#my-video').backgroundVideo({
-                pauseVideoOnViewLoss: false
-            });
+	$(function(){
+		$.okvideo({ video: '121007977' }) // YouTube or Vimeo ID
 	});
 </script>
 </body>
